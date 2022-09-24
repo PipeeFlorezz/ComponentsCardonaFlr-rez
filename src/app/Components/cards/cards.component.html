@@ -1,0 +1,23 @@
+<section class="pt-4">
+    <h4>Lugares turisticos que no te puedes perder este 2022</h4>
+
+    <ul class="lugaresRecorridos">
+        <div class="row">
+
+            <li *ngFor="let lugar of lugares" class="mb-5 col-sm-4">
+                <div class="card">
+                    <div class="img">
+                        <img [src]="lugar.imagen" alt="imagen">
+                    </div>
+                    <div class="card-footer info">
+                        <p><b>Pais</b>: <span>{{lugar.pais}}</span></p>
+                        <p> <b>Habitantes</b>: <span>{{lugar.habitantes}}</span>
+                        </p>
+                        <p><b>Capital</b>: <span>{{lugar.capital}}</span></p>
+                    </div>
+                </div>
+            </li>
+        </div>
+    </ul>
+
+</section>
